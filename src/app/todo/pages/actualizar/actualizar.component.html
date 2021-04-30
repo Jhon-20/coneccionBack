@@ -1,0 +1,15 @@
+<div class="container conentedor" style="margin: 5em;">
+<div class="lista">
+    <h1>Modificar Tarea</h1>
+    <mat-form-field appearance="fill">
+      <mat-label>Descripcción</mat-label>
+      <input
+        matInput
+        name="descripccionTarea"
+        [(ngModel)]="descripccionTarea"
+        (keyup.enter)="actualizar()"
+      />
+    </mat-form-field><br>
+    <button mat-raised-button color="primary" (click)="actualizar()"> Actualizar</button>
+  </div>
+</div>
